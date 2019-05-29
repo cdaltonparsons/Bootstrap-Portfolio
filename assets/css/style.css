@@ -6,7 +6,7 @@ body {
 #logo {
         float: left;
         height: 90px;
-        margin-left: 132px;
+        margin-right: auto;
         padding-right: 10px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 30px;
@@ -42,7 +42,7 @@ nav a {
     border-left: 1px solid #efefef;
 }
 
-nav a:first {
+#about {
     border-left: 0 none;
 }
 
@@ -103,10 +103,6 @@ h3, h2 {
     overflow: auto;
 }
 
-/* .work:nth-child(even) {
-    margin-right: 40px;
-} */
-
 .work img {
     width: 100%;
     border: 0 none;
@@ -114,7 +110,7 @@ h3, h2 {
 }
 
 .work h3 {
-    position: absolute;
+    
     bottom: 20px;
     width: 100%;
     padding: 15px;
@@ -158,4 +154,31 @@ input[type=submit] {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 640px) {
+    #logo {
+    width: 100%;
+    margin: 0;
+
+    }
+
+    nav a {
+        display: inline-block;
+        color: #999;
+        text-decoration: none;
+        border-left: 1px solid #efefef;
+        line-height: 12px;
+
+    }
+
+    .tabs a{
+        line-height: 90px;
+    }
+
+    .tabs {
+        margin-left: 24%;
+    }
 }
