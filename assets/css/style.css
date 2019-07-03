@@ -95,6 +95,11 @@ h3, h2 {
     border-bottom: 2px solid #eeeeee;
 }
 
+.portPic {
+    width: 275px;
+    height: 275px;
+}
+
 .work {
     position: relative;
     float: left;
